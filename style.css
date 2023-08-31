@@ -7,6 +7,8 @@
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 12fr;
+
     gap: 4px;
 }
 
@@ -16,12 +18,34 @@
 
 .header {
     background-color: blue;
+
+    grid-column: 1 / 3;
 }
 
 .sidebar {
     background-color: pink;
+
+    display: grid;
+}
+
+.sidebar ul {
+    display: grid;
+    list-style-type: none;
 }
 
 .main {
     background-color: aqua;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.project_container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.news_container {
+    display: grid;
 }
