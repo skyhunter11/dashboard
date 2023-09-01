@@ -26,6 +26,7 @@
     background-color: pink;
 
     display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
 }
 
 .sidebar ul {
@@ -42,10 +43,39 @@
 
 .project_container {
     display: grid;
+    gap: 4px;
 
     grid-template-columns: 1fr 1fr;
 }
 
+.project_tile {
+    background-color: sandybrown;
+}
+
 .news_container {
     display: grid;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
 }
+
+.announcement_container {
+    display: grid;
+    background-color: bisque;
+}
+
+.announcement_item {
+    display: grid;
+}
+
+.trending_container {
+    display: grid;
+    background-color: honeydew;
+}
+
+h2 {
+    display: grid;
+    align-items: end;
+    justify-items: start;
+}
+
+
+
