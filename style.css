@@ -78,9 +78,10 @@ button {
 
 .project_container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 4px;
 
-    grid-template-columns: 1fr 1fr;
+    background-color: black;
 }
 
 .project_item {
@@ -89,27 +90,37 @@ button {
 
 .news_container {
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+
+    background-color: maroon;
 }
 
 .announcement_container {
     display: grid;
+    gap: 4px;
+
     background-color: bisque;
 }
 
 .announcement_item {
     display: grid;
+    background-color: cornflowerblue;
 }
 
 .trending_container {
     display: grid;
+    gap: 4px;
+
+
     background-color: honeydew;
 }
 
-h2 {
+.trending_item {
     display: grid;
-    align-items: end;
-    justify-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    background-color: forestgreen;
 }
 
 
