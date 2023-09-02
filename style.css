@@ -24,6 +24,37 @@
     grid-template-columns: 2fr 1fr;
 }
 
+.search-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.welcome-container {
+    display: grid;
+    justify-items: start;
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+
 .sidebar {
     background-color: pink;
     grid-row: 1 / 3;
