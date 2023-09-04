@@ -4,11 +4,11 @@
 }
 
 .container {
+    height: 100vh;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 12fr;
-
     gap: 4px;
 }
 
@@ -29,7 +29,7 @@
     grid-template-columns: 1fr 4fr;
     align-items: center;
 
-    background-color: aqua;
+    background-color: palevioletred;
 }
 
 .profile-container {
@@ -65,11 +65,16 @@ button {
 
 .sidebar {
     display: grid;
+    grid-template-rows: 10% 45% 45%;
     grid-row: 1 / 3;
-    grid-template-rows: 1fr 2fr 2fr;
     gap: 4px;
 
     background-color: pink;
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
 }
 
 .sidebar div {
@@ -89,6 +94,7 @@ button {
     display: grid;
     grid-column-start: 2;
     grid-template-columns: 3fr 1fr;
+    /* align-content: space-between; */
 
     background-color: aqua;
 }
@@ -102,6 +108,11 @@ button {
 }
 
 .project_item {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1rem 1fr;
+    grid-template-areas: none;
+
     background-color: sandybrown;
 }
 
@@ -141,6 +152,3 @@ button {
     
     background-color: forestgreen;
 }
-
-
-
