@@ -26,11 +26,18 @@
 }
 
 .search-container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
+    display: flex;
     align-items: center;
-
     background-color: palevioletred;
+}
+
+.search-container img {
+    width: 20px
+}
+
+.search-container input {
+    margin: 5px;
+    min-width: 50%;
 }
 
 .profile-container {
