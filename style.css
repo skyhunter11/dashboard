@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.icon {
+    width: 25px;
+}
+
+.profile-pic {
+    width: 40px;
+}
+
 .container {
     height: 100vh;
     text-align: center;
@@ -31,10 +39,6 @@
     background-color: palevioletred;
 }
 
-.search-container img {
-    width: 20px
-}
-
 .search-container input {
     margin: 5px;
     min-width: 50%;
@@ -44,9 +48,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     align-items: center;
+    justify-items: center;
 
     background-color: chocolate;
 }
+
 
 .welcome-container {
     display: grid;
@@ -186,7 +192,3 @@ button {
     
     background-color: forestgreen;
 }
-
-/* ul {
-    list-style-type: none;
-} */
