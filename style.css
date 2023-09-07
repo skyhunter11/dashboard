@@ -53,13 +53,34 @@
     background-color: chocolate;
 }
 
+.big-profile-pic {
+    width: 70px;
+}
+
 
 .welcome-container {
-    display: grid;
+    display: flex;
     justify-items: start;
+    /* grid-template-columns: 1fr 1fr; */
 
     background-color: bisque;
 }
+
+.welcome-text {
+    display: grid;
+    grid-template-rows: 1rem 1rem;
+    gap: 10px;
+    align-items: center;
+    justify-items: start;
+}
+
+.welcome-message {
+    font-size: .9rem;
+}
+
+.welcome-name {
+    font-size: 2rem;
+    }
 
 .buttons-container {
     display: grid;
