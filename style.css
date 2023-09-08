@@ -110,7 +110,13 @@ button {
 .sidebar-header {
     display: flex;
     align-items: center;
+    font-size: 1.8rem;
+    gap: 10px;
 }
+
+.dashboard-icon {
+    width: 60px;
+    }
 
 .sidebar div {
     background-color: blueviolet;
@@ -120,7 +126,18 @@ button {
     font-size: 17px;
     font-weight: 600;
     list-style-type: none;
-    }
+}
+
+.sidebar-styles li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.sidebar-styles img {
+    width: 35px;
+}
 
 .menu_1 {
     display: grid;
