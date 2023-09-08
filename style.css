@@ -36,13 +36,23 @@
 .search-container {
     display: flex;
     align-items: center;
+    gap: 10px;
     background-color: palevioletred;
 }
 
 .search-container input {
-    margin: 5px;
-    min-width: 50%;
+    width: 50%;
+    border-radius: 15px;
+    border: none;
+    padding: 5px 10px;
+
 }
+
+/* border: 1px solid #ddd;
+border-radius: 16px;
+padding: 8px 24px;
+width: 400px;
+margin-bottom: 16px; */
 
 .profile-container {
     display: grid;
@@ -209,9 +219,14 @@ button {
     background-color: bisque;
 }
 
-.announcement_item {
-    display: grid;
+.announcement_container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
+
+.announcement_item {
     background-color: cornflowerblue;
 }
 
