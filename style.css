@@ -14,7 +14,6 @@
 
 .container {
     height: 100vh;
-    text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 12fr;
@@ -182,19 +181,44 @@ button {
 
 .project_items {
     display: grid;
-
-    
-    grid-template-columns: repeat(2, minmax(1fr, 375px));
-    grid-template-rows:
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px 300px 300px;
 }
 
 .project_item {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 16fr;
     background-color: sandybrown;
+    justify-items: start;
 }
 
-.color-block {
+.project_title {
+    font-size: 17px;
+    font-weight: 600;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.color_block {
     background-color: brown;
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.text-block {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.project_icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-width: 300px;
+    justify-items: end;
+    margin-left: auto;
+    background-color: lightblue;
+}
+
+.project_icons img {
+    width: 35px;
 }
 
 .announcement_container {
