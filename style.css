@@ -165,16 +165,16 @@ button {
     background-color: darkgray;
 }
 
+.project_container_header, .announcement_container_header, .trending_container_header {
+    font-size: 17px;
+    font-weight: 600;
+}
+
 .project_container_header {
     border: solid slateblue;
 }
 
 .announcement_container_header {
-    display: grid;
-    justify-items: start;
-    }
-
-.trending_container_header {
     display: grid;
     justify-items: start;
 }
@@ -243,9 +243,16 @@ button {
 }
 
 .trending_item {
-    display: grid;
+    display: flex;
+    padding: 0px;
+
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    align-items: center; */
     
     background-color: forestgreen;
+}
+
+.trending_item_text {
+    font-size: .9rem;
 }
