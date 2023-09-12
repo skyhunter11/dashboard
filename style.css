@@ -20,7 +20,7 @@
     gap: 4px;
 }
 
-.container div {
+.container > div {
     padding: 15px;
 }
 
@@ -222,34 +222,39 @@ button {
 }
 
 .announcement_container {
+    display: grid;
+
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 400px;
 
     background-color: bisque;
 }
 
-.announcement_container div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-
 .announcement_item {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    
+
     background-color: cornflowerblue;
 }
 
 .trending_container {
+    display: grid;
+    align-items: center;
+
+    min-width: 200px;
+    max-width: 300px;
+    max-height: 400px;
 
     background-color: honeydew;
 }
 
 .trending_item {
     display: flex;
-    padding: 0px;
+    padding: 15px;
 
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center; */
-    
     background-color: forestgreen;
 }
 
